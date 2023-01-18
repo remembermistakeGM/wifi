@@ -34,7 +34,7 @@
       </view>
 
        <view class=''>
-        <view class='carts-item-title'>附近上架</view>
+        <view class='carts-item-title'>附近店铺</view>
       <view class="carts-item" v-for="(item,index) in 10" :key="index">
         <view>
           <image src="https://swjls.shuxiaoliu.com//Uploads/image/goods/2022-08-10/62f3436390580.jpg" class="carts-image" mode="scaleToFill"></image>
