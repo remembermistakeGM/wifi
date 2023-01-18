@@ -24,7 +24,7 @@
 				"navigationBarTitleText": "我的分享海报"
 			}
 		},
-		{ 
+		{
 			"path": "pages/member/member",
 			"style": {
 				"navigationBarTitleText": ""
@@ -32,6 +32,12 @@
 		},
 		{
 			"path": "pages/stores/stores",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/storeDetail/storeDetail",
 			"style": {
 				"navigationBarTitleText": ""
 			}
