@@ -20,7 +20,7 @@
 
       <view class='store_cart'>
          <view class="goods_title_box">
-          <view class="goods_title">--店铺推荐--</view>
+          <view class="goods_title">-店铺推荐-</view>
           </view>
             <!-- 导航 -->
           <view class="sticky-box">
