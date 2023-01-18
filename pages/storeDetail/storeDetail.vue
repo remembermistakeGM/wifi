@@ -11,6 +11,10 @@
             <view class='store_text'>附件省安顺市</view>  
           </view>
       </view>
+      <view class='store_info_right'>
+        <image src="../../static/icons/navigate.svg"></image>
+        <text></text>
+      </view>
     </view>
 
     <view class="head-icon-item">
@@ -98,7 +102,6 @@ export default {
   width: 100%;
   top: 0;
   z-index: -1;
- 
 }
 .store_info{
   display: flex;
@@ -108,6 +111,13 @@ export default {
   background: white;
   margin: 10rpx 28rpx;
   border-radius: 16rpx;
+  align-items: center;
+}
+.store_info_right image{
+width: 36rpx;
+height: 40rpx;
+margin-right: 50rpx;
+display: block;
 }
 .store_info1{
 
@@ -166,6 +176,12 @@ export default {
    margin: 80rpx 80rpx 60rpx 80rpx;
    font-size: 0.85rem;
    border-radius: 100rpx;
+} 
+.connect_btn button::after{
+  border: none;
+}
+.connect_btn button::before{
+  border: none;
 }
 .connect_image image{
   width: 180rpx;
