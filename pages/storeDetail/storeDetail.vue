@@ -1,6 +1,18 @@
 <template>
   <view class="storeDetail">
     <view class='page'></view>
+    <view class="swiper1">
+      <swiper class="swiper" circular :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval"
+				:duration="duration">
+				<swiper-item wx:for="{{3}}">
+					<view class="swiper-item">
+            <image style="height:280rpx" mode="scaleToFill" style="width: 100%" src="https://swjls.shuxiaoliu.com//Uploads/image/goods/2022-08-10/62f3436390580.jpg"
+          ></image>
+          </view>
+				</swiper-item>
+			</swiper>
+
+    </view>
     <view class='store_info'>
       <view class='store_info_left'>
         <view class='store_img'><image mode="scaleToFill" src="https://swjls.shuxiaoliu.com//Uploads/image/goods/2022-10-27/6359f2ee608fa.png"></image></view>
@@ -11,6 +23,10 @@
             <view class='store_text'>附件省安顺市</view>  
           </view>
       </view>
+      <view class='store_info_right'>
+        <image src="../../static/icons/navigate.svg"></image>
+        <text></text>
+      </view>
     </view>
 
     <view class="head-icon-item">
@@ -19,7 +35,7 @@
       <text>一键快速连接</text>
       </view>
       <view class="head-icon">
-      <image src="/static/icons/lock-closed-outline.svg"></image>
+      <image  src="/static/icons/lock-closed-outline.svg"></image>
       <text>无需告知密码</text>
       </view>
       <view class="head-icon">
@@ -62,7 +78,12 @@ export default {
   components: {},
   props: {},
   data() {
-    return {}
+    return {
+      indicatorDots: true,
+            autoplay: true,
+            interval: 2000,
+            duration: 500
+    }
   },
   computed: {},
   methods: {},
@@ -98,7 +119,6 @@ export default {
   width: 100%;
   top: 0;
   z-index: -1;
- 
 }
 .store_info{
   display: flex;
@@ -108,6 +128,13 @@ export default {
   background: white;
   margin: 10rpx 28rpx;
   border-radius: 16rpx;
+  align-items: center;
+}
+.store_info_right image{
+width: 36rpx;
+height: 40rpx;
+margin-right: 50rpx;
+display: block;
 }
 .store_info1{
 
@@ -166,6 +193,12 @@ export default {
    margin: 80rpx 80rpx 60rpx 80rpx;
    font-size: 0.85rem;
    border-radius: 100rpx;
+} 
+.connect_btn button::after{
+  border: none;
+}
+.connect_btn button::before{
+  border: none;
 }
 .connect_image image{
   width: 180rpx;
